@@ -13,10 +13,16 @@ class BookListVC: UIViewController {
     
     @IBOutlet var collectionViewBooks: UICollectionView!
     
+    //MARK: - Variable
+    
+    var bookListViewModel: BookListViewModel = BookListViewModel()
+    
     //MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bookListViewModel.callBookListApi()
         
     }
 
@@ -34,7 +40,7 @@ extension BookListVC: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        UICollectionView()
+        UICollectionViewCell()
     }
     
     
