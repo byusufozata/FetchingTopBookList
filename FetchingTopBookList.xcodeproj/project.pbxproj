@@ -17,6 +17,7 @@
 		C1F30FF9295E300400796F89 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1F30FF7295E300400796F89 /* BookCell.xib */; };
 		C1F30FFB295E3ABC00796F89 /* BookListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F30FFA295E3ABC00796F89 /* BookListViewModel.swift */; };
 		C1F30FFE295E3BE300796F89 /* NetworkMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F30FFD295E3BE300796F89 /* NetworkMenager.swift */; };
+		C1F31001295E3DFC00796F89 /* BookListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F31000295E3DFC00796F89 /* BookListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C1F30FF7295E300400796F89 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
 		C1F30FFA295E3ABC00796F89 /* BookListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewModel.swift; sourceTree = "<group>"; };
 		C1F30FFD295E3BE300796F89 /* NetworkMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMenager.swift; sourceTree = "<group>"; };
+		C1F31000295E3DFC00796F89 /* BookListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		C1F30FDA295E2B7B00796F89 /* FetchingTopBookList */ = {
 			isa = PBXGroup;
 			children = (
+				C1F30FFF295E3DC100796F89 /* Model */,
 				C1F30FFC295E3BC500796F89 /* Networking */,
 				C1F30FF3295E2C2C00796F89 /* ViewModel */,
 				C1F30FF2295E2C0E00796F89 /* Resources */,
@@ -143,6 +146,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		C1F30FFF295E3DC100796F89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1F31000295E3DFC00796F89 /* BookListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,6 +229,7 @@
 				C1F30FFE295E3BE300796F89 /* NetworkMenager.swift in Sources */,
 				C1F30FF8295E300400796F89 /* BookCell.swift in Sources */,
 				C1F30FE0295E2B7B00796F89 /* BookListVC.swift in Sources */,
+				C1F31001295E3DFC00796F89 /* BookListModel.swift in Sources */,
 				C1F30FFB295E3ABC00796F89 /* BookListViewModel.swift in Sources */,
 				C1F30FDC295E2B7B00796F89 /* AppDelegate.swift in Sources */,
 				C1F30FDE295E2B7B00796F89 /* SceneDelegate.swift in Sources */,

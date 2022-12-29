@@ -22,7 +22,12 @@ class BookListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bookListViewModel.callBookListApi()
+        collectionViewBooks.register(UINib(nibName: "BookCell", bundle: nil), forCellWithReuseIdentifier: "BookCell")
+        bookListViewModel.callBookListApi { model in
+            DispatchQueue.main.async {
+                self.collectionViewBooks.reloadData()
+            }
+        }
         
     }
 
@@ -40,7 +45,10 @@ extension BookListVC: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCell", for: indexPath) as? BookCell else {
+            fatalError("Cell is not dequed corretcly")
+        }
+        return cell 
     }
     
     

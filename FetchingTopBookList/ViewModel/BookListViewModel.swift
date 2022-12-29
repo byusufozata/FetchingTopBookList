@@ -9,10 +9,17 @@ import UIKit
 
 class BookListViewModel {
     
+    //MARK: - Veriables
+    
+    var bookListModel: BooklistModel?
+    
     //MARK: - API Function
     
-    func callBookListApi() {
+    func callBookListApi(_ completion: @escaping ((_ model: BooklistModel) -> Void )) {
         // calling my bookListApi
-        NetworkMenager.ins.bookListApi()
+        NetworkMenager.ins.bookListApi { bookListModel in
+            self.bookListModel = bookListModel
+            completion(bookListModel)
+        }
     }
 }
