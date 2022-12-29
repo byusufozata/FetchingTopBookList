@@ -13,6 +13,10 @@ class NetworkMenager {
     
     static var ins = NetworkMenager()
     
+    //MARK: - init
+    
+    private init()  { }
+    
     //MARK: - Api
     
     func bookListApi(_ completion: @escaping ((_ bookListModel: BooklistModel) -> Void )) {

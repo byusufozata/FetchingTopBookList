@@ -20,6 +20,7 @@ class BookListViewModel {
         NetworkMenager.ins.bookListApi { bookListModel in
             self.bookListModel = bookListModel
             completion(bookListModel)
+            print(bookListModel)
         }
     }
 }
