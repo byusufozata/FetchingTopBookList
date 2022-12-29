@@ -12,6 +12,7 @@ class BookListViewModel {
     //MARK: - API Function
     
     func callBookListApi() {
-        
+        // calling my bookListApi
+        NetworkMenager.ins.bookListApi()
     }
 }
