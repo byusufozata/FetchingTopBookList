@@ -10,6 +10,9 @@ import UIKit
 class BookCell: UICollectionViewCell {
 
     //MARK: - Life Cycle
+    @IBOutlet var bookName: UILabel!
+    @IBOutlet var writer: UILabel!
+    //MARK: - Outlets
     
     override func awakeFromNib() {
         super.awakeFromNib()
