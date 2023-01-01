@@ -5,7 +5,7 @@
 //  Created by YUSUF ÖZATA on 30.12.2022.
 //
 
-import UIKit
+import Foundation
 
 class BookListViewModel {
     

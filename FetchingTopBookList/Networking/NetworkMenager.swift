@@ -21,7 +21,7 @@ class NetworkMenager {
     
     func bookListApi(_ completion: @escaping ((_ bookListModel: BooklistModel) -> Void )) {
         
-        let booksApiUrl = " https://rss.applemarketingtools.com/api/v2/tr/books/top-free/10/books.json"
+        let booksApiUrl = "https://rss.applemarketingtools.com/api/v2/us/books/top-free/10/books.json"
         if let url = URL(string: booksApiUrl) {
             let task = URLSession.shared.dataTask(with: url) { data,response, error in
                 guard let data = data else { return  }
@@ -36,3 +36,4 @@ class NetworkMenager {
  
     }
 }
+
